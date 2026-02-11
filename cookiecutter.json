@@ -1,0 +1,10 @@
+{
+    "plugin_name": "my_plugin",
+    "plugin_class_name": "MyPlugin",
+    "package_name": "platzky_{{ cookiecutter.plugin_name }}",
+    "repo_name": "platzky-{{ cookiecutter.plugin_name.replace('_', '-') }}",
+    "description": "",
+    "author": "",
+    "python_version": "3.10",
+    "platzky_version": "^1.4.2"
+}
