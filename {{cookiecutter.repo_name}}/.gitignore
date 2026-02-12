@@ -1,4 +1,5 @@
 **/__pycache__
+*.egg-info
 data.json
 config.yml
 
@@ -18,3 +19,8 @@ venv
 .vscode
 .idea
 *~
+
+# Test/lint caches
+.pytest_cache
+.ruff_cache
+.mypy_cache

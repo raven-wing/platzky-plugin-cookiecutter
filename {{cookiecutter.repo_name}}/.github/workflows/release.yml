@@ -1,7 +1,10 @@
 name: Semantic Release
 
 on:
-  push:
+  workflow_run:
+    workflows: ["Testing pipeline"]
+    types:
+      - completed
     branches:
       - main
 
@@ -13,14 +16,8 @@ permissions:
   contents: read
 
 jobs:
-  lint:
-    uses: ./.github/workflows/lint.yml
-
-  test:
-    uses: ./.github/workflows/test.yml
-
   release:
-    needs: [lint, test]
+    if: {% raw %}${{ github.event.workflow_run.conclusion == 'success' }}{% endraw %}
     runs-on: ubuntu-latest
     outputs:
       released: {% raw %}${{ steps.release.outputs.released }}{% endraw %}

@@ -7,4 +7,4 @@ def test_process_returns_app():
     app = MagicMock()
     plugin = {{ cookiecutter.plugin_class_name }}Plugin({})
     result = plugin.process(app)
-    assert result == app
+    assert result is app

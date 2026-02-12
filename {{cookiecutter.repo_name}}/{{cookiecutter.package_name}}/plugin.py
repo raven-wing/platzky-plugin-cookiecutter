@@ -22,5 +22,5 @@ class {{ cookiecutter.plugin_class_name }}Plugin(PluginBase[{{ cookiecutter.plug
 
     def process(self, app: Engine) -> Engine:
         """Process the app with this plugin's configuration."""
-        config = cast({{ cookiecutter.plugin_class_name }}Config, self.config)
+        _config = cast({{ cookiecutter.plugin_class_name }}Config, self.config)
         return app

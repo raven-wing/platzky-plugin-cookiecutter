@@ -11,10 +11,12 @@ pip install {{ cookiecutter.package_name }}
 ## Usage
 
 ```json
-"plugins": [
-    {
-        "name": "{{ cookiecutter.plugin_name }}",
-        "config": {}
-    }
-]
+{
+    "plugins": [
+        {
+            "name": "{{ cookiecutter.plugin_name }}",
+            "config": {}
+        }
+    ]
+}
 ```
