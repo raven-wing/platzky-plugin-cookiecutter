@@ -24,6 +24,7 @@ coverage:
 html-cov: coverage
 	poetry run coverage html
 
+# Requires poetry-audit-plugin: pip install poetry-audit-plugin
 audit:
 	poetry audit --ignore-package=py
 

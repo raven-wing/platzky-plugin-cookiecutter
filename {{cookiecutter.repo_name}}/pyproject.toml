@@ -12,10 +12,10 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^{{ cookiecutter.python_version }}"
+platzky = "{{ cookiecutter.platzky_version }}"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.4"
-platzky = "{{ cookiecutter.platzky_version }}"
 black = "^24.10.0"
 ruff = "^0.8.3"
 pyright = "^1.1.390"

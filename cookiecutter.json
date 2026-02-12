@@ -1,6 +1,6 @@
 {
     "plugin_name": "my_plugin",
-    "plugin_class_name": "MyPlugin",
+    "plugin_class_name": "{{ cookiecutter.plugin_name.replace('_', ' ').title().replace(' ', '') }}",
     "package_name": "platzky_{{ cookiecutter.plugin_name }}",
     "repo_name": "platzky-{{ cookiecutter.plugin_name.replace('_', '-') }}",
     "description": "",
