@@ -80,7 +80,6 @@ major_on_zero = false
 version_toml = ["pyproject.toml:tool.poetry.version"]
 build_command = "poetry build"
 dist_path = "dist/"
-upload_to_release = true
 remove_dist = false
 commit_author = "semantic-release <semantic-release>"
 commit_message = "chore(release): {version} [skip ci]"
